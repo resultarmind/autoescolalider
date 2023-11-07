@@ -1,0 +1,323 @@
+
+
+  <div id='moreAbout'>
+    <img class='moreAboutImage'
+      src=''></img>
+
+    <div class='moreAboutText'>
+      <h6>About us</h6>
+      <h2>
+        Why is worth trust our company?
+      </h2>
+      <div class='aboutColumns'>
+        <div class='aboutColumn'>
+          <h6 class='blue'>Since</h6>
+          <h1>1992</h1>
+          <p>Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel.</p>
+          <p>Maecenas ultrices tellus sit amet sem placerat tempor. Maecenas eget arcu venenatis, sagittis felis sit
+            amet molestie ante.</p>
+        </div>
+        <div class='aboutColumn'>
+          <h6>
+            Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet magna purus, commodo elementum.
+          </h6>
+          <p>Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus,
+            commodo in diam nec, pretium auctor sapien. In pulvinar.</p>
+          <p>Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a,
+            suscipit rhoncus dui.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id='ourTeam'>
+    <div class='innerPricing'>
+      <h6>Our instructors</h6>
+      <h2>Let’s meet<br />
+        our professional team</h2>
+      <div class='priceConatiners'>
+        <div class='priceConatiner'>
+          <img class='photo'
+            src=''></img>
+          <h4>Kevin Perry</h4>
+          <p>
+            Driving Instructor
+          </p>
+          <p class='whatIsit'>
+            Ut ultricies imperdiet sodales. Aliquam fringilla aliquam.
+          </p>
+          <img src='' width=35
+            height=35></img>
+          <h4>99.7%</h4>
+          <p>Suscipit ligula volutpat.</p>
+          <div>
+            <i class="fab fa-skype"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter-square"></i>
+          </div>
+        </div>
+
+        <div class='priceConatiner'>
+          <img class='photo'
+            src=''></img>
+          <h4>Sara Wright</h4>
+
+          <p>
+            Driving Instructor
+          </p>
+          <p class='whatIsit'>
+            Ut ultricies imperdiet sodales. Aliquam fringilla aliquam.
+          </p>
+          <img src='' width=35
+            height=35></img>
+          <h4>99%</h4>
+          <p>Suscipit ligula volutpat.</p>
+          <div>
+            <i class="fab fa-skype"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter-square"></i>
+          </div>
+        </div>
+
+        <div class='priceConatiner'>
+          <img class='photo'
+            src=''></img>
+          <h4>Jennifer Lee</h4>
+
+          <p>
+            Driving Instructor
+          </p>
+          <p class='whatIsit'>
+            Ut ultricies imperdiet sodales. Aliquam fringilla aliquam.
+          </p>
+          <img src='' width=35
+            height=35></img>
+          <h4>99.8%</h4>
+          <p>Suscipit ligula volutpat.</p>
+          <div>
+            <i class="fab fa-skype"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter-square"></i>
+          </div>
+        </div>
+
+        <div class='priceConatiner'>
+          <img class='photo'
+            src=''></img>
+          <h4>Brandon Ross</h4>
+          <p>
+            Driving Instructor
+          </p>
+          <p class='whatIsit'>
+            Ut ultricies imperdiet sodales. Aliquam fringilla aliquam.
+          </p>
+          <img src='' width=35
+            height=35></img>
+          <h4>99.9%</h4>
+          <p>Suscipit ligula volutpat.</p>
+          <div>
+            <i class="fab fa-skype"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter-square"></i>
+          </div>
+        </div>
+
+        <div class='priceConatiner'>
+          <img class='photo'
+            src=''></img>
+          <h4>Alice Boyd</h4>
+          <p>
+            Driving Instructor
+          </p>
+          <p class='whatIsit'>
+            Ut ultricies imperdiet sodales. Aliquam fringilla aliquam.
+          </p>
+          <img src='' width=35
+            height=35></img>
+          <h4>99%</h4>
+          <p>Suscipit ligula volutpat.</p>
+          <div>
+            <i class="fab fa-skype"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter-square"></i>
+          </div>
+        </div>
+
+        <div class='priceConatiner'>
+          <img class='photo'
+            src=''></img>
+          <h4>Brandon Perry</h4>
+          <p>Driving Instructor</p>
+          <p class='whatIsit'>
+            Ut ultricies imperdiet sodales. Aliquam fringilla aliquam.
+          </p>
+          <img src='' width=35
+            height=35></img>
+          <h4>99.2%</h4>
+          <p>Suscipit ligula volutpat.</p>
+          <div>
+            <i class="fab fa-skype"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter-square"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id='ourSkills'>
+    <div class='innerSkills'>
+      <div class='cont'>
+        <h6>Driving technique</h6>
+        <h2>Improve your driving skills</h2>
+      </div>
+      <div class='cont'>
+        <img src='' width="780"
+          height="441"></img>
+        <h4>For motorbikes</h4>
+        <p>Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor.</p>
+        <a href='#'><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+      </div>
+      <div class='cont'>
+        <img src='' width="780"
+          height="441"></img>
+        <h4>For cars</h4>
+        <p>Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor.</p>
+        <a href='#'><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+
+      </div>
+    </div>
+  </div>
+  <div class = 'line'></div>
+  <div id='ourReviews'>
+    <h6>Reviews</h6>
+    <h2>
+      What our clients say
+      <br/>
+       about us
+    </h2>
+    
+    
+    
+    
+    <div  id = 'reviewsBox' class = 'reviewsBox'>
+      
+      <div class = 'review'>
+        <div class = 'reviewImgBox'>
+          <img class = 'reviewImg' src = ''></img>
+        </div>
+        <blockquote>
+        Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
+        </blockquote>
+        <div class = 'dots'>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <h5>Lena</h5>
+      
+      </div>
+          <div class = 'review'>
+        <div class = 'reviewImgBox'>
+          <img class = 'reviewImg' src = ''></img>
+        </div>
+        <blockquote>
+        Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
+        </blockquote>
+        <div class = 'dots'>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <h5>Kevin</h5>
+      </div>
+
+      <div class = 'review'>
+        <div class = 'reviewImgBox'>
+          <img class = 'reviewImg' src = ''></img>
+        </div>
+        <blockquote>
+        Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
+        </blockquote>
+        <div class = 'dots'>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <h5>Anna</h5>
+      </div>
+    </div> 
+      <div class = 'dotsChange'>
+          <span id = 'secret'></span>
+          <span id = 'first'></span>
+          <span id = 'second'></span>
+          <span id = 'third'></span>
+      </div>
+
+  </div>
+
+
+
+  <div id = 'contacts'>
+    <h6>Contact us</h6>
+    <h2>
+      Do you have
+      <br/>
+      any question?
+    </h2>
+    <div class ='questionContainer'>
+      <div class = 'form'>
+        <img src = ''></img>
+        <h4>Send us a message</h4>
+        <p>
+        Aliquam ac dui vel dui vulputate consectetur. Mauris accumsan, massa non consectetur condimentum, diam arcu tristique nibh, nec egestas diam elit at nulla. Suspendisse potenti. In non lacinia risus, ac tempor ipsum.
+        </p>
+        <form onsubmit="alert('submit!');return false">
+          <input  placeholder="Your name" type = 'text' class='inl-block' required>
+          <input  placeholder="Your e-mail" type = 'email' class='inl-block' required>
+          <input   class = 'block' placeholder="subject" type = 'text' required>
+          <textarea cols="40" rows='8' class = 'block'  placeholder="message" name="comment" ></textarea>
+          <input type = 'submit' id = 'sending' value = 'Send a message'></input>
+        </form>
+      </div>
+      <div class = 'adress'>
+        <div class ='contactInfoUp'>
+          <img src =''></img>
+          <h4>Our address</h4>
+          <p>
+            Level 13, 2 Elizabeth St,
+            <br/>
+            Melbourne, Victoria 3000,
+            <br/>
+            Australia
+          </p>
+        <hr/>
+          <p>
+            Monday - Saturday
+            <br/>
+            08:00 AM - 10:00 PM
+          </p>
+          <p>noreply@envato.com</p>
+          <div class = 'iconInfo'>
+            <i class="fab fa-skype"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter-square"></i>
+          </div>
+        </div>
+        <div class ='contactInfoDown'>
+          <P>Our Help desk is available MON to SAT  08:00 AM - 10:00 PM</p>
+          <h5>+61 (0) 383 766 284</h5>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
