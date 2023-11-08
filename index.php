@@ -30,7 +30,19 @@
 </head>
 
 <body>
-    
+
+<?php
+    $numConfetes = 60;
+
+    for ($i = 0; $i < $numConfetes; $i++) {
+      $leftPercentage = rand(0, 100);
+      $animationDuration = rand(5, 15);
+      $shapeClass = ['circle', 'square', 'triangle'][rand(0, 2)]; // Escolhe aleatoriamente entre círculo, quadrado e triângulo
+
+      echo "<div class='confete $shapeClass' style='left: {$leftPercentage}%; animation-duration: {$animationDuration}s;'></div>";
+    }
+  ?>
+
 <!--
 <!-- Modal 
 <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
@@ -99,7 +111,7 @@
   }
 
   function calculateRemainingTime() {
-    const targetDate = new Date("November 11, 2023 00:00:00");
+    const targetDate = new Date("November 30, 2023 00:00:00");
     const now = new Date();
     const remainingTime = targetDate.getTime() - now.getTime();
     const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
@@ -132,7 +144,9 @@
 <section>
   <div class="container">
       <div class="col-md-12 d-flex align-items-center justify-content-center">
-          <img src="https://resultarmind.cloud/autoescola-eng1/logosautoescola.png" alt="" class="img-logo">
+          <img src="https://resultarmind.cloud/autoescola-lider-imgs/cfc2.png" alt="" class="img-logo">
+          <img src="https://resultarmind.cloud/autoescola-lider-imgs/cfcm.png" alt="" class="mobile-logo">
+
       </div>
   </div>
 </section>
@@ -249,152 +263,112 @@
 
   <section>
 
-<div class="container">
-  <div class="col-md-12 mt-3"> <div class="card2">
-  <div class="form-edit" id="form">
-    <form action="/" method="post">
-      <div class="card-border">
-        <h2 class="text-center pt-5">ENTRE EM CONTATO</h2>
-      </div>
-
-      <div class="form-row p-5">
-
-        <div class="row">
-
-          <div class="col-md-6">
-            <div class="form-group mt-4">
-              <label for="nome">Seu nome</label>
-              <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome..">
-            </div>
+  <div class="container">
+  <div class="col-md-12 mt-3">
+    <div class="card2">
+      <div class="form-edit" id="form">
+        <form action="/" method="post">
+          <div class="card-border">
+            <h2 class="text-center pt-5">ENTRE EM CONTATO</h2>
           </div>
 
-          <div class="col-md-6">
+          <div class="form-row p-5">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group mt-4">
+                  <label for="nome">Seu nome</label>
+                  <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome..">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group mt-4">
+                  <label for="telefone">Telefone para contato</label>
+                  <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone..">
+                </div>
+              </div>
+            </div>
+
             <div class="form-group mt-4">
-              <label for="cidade">Selecione a cidade mais próxima a você</label>
-              <select class="form-control" id="cidade" name="cidade">
-                <option value="Engenheiro Caldas">Engenheiro Caldas</option>
-                <option value="Tarumirim">Tarumirim</option>
-                <option value="Itanhomi">Itanhomi</option>
+              <label for="datetime">Melhor data e horário para contato</label>
+              <input type="datetime-local" class="form-control" id="datetime" name="datetime">
+            </div>
+
+            <div class="form-group mt-4">
+              <label for="categoria">Categoria de Habilitação</label>
+              <select class="form-control" id="categoria" name="categoria">
+                <option value="Categoria A + B" data-card-id="categoria-1">Categoria A + B</option>
+                <option value="Categoria A" data-card-id="categoria-2">Categoria A</option>
+                <option value="Categoria B" data-card-id="categoria-6">Categoria B</option>
+                <option value="Categoria C" data-card-id="categoria-4">Categoria C</option>
+                <option value="Categoria D" data-card-id="categoria-5">Categoria D</option>
+                <option value="Renovação / Reciclagem" data-card-id="categoria-3">Renovação / Reciclagem</option>
               </select>
             </div>
+
+            <div class="form-group text-center mt-5">
+              <button type="submit" class="btn btn-edit">Enviar</button>
+            </div>
           </div>
-
-        </div>
-        <div class="form-group mt-4">
-        <label for="telefone">Telefone para contato</label>
-        <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone..">
+        </form>
       </div>
-
-      <div class="form-group mt-4">
-        <label for="datetime">Melhor data e horário para contato</label>
-        <input type="datetime-local" class="form-control" id="datetime" name="datetime">
-      </div>
-
-      <div class="form-group mt-4">
-        <label for="categoria">Categoria de Habilitação</label>
-        <select class="form-control" id="categoria" name="categoria">
-          <option value="Categoria A + B" data-card-id="categoria-1">Categoria A + B</option>
-          <option value="Categoria A" data-card-id="categoria-2">Categoria A</option>
-          <option value="Categoria B" data-card-id="categoria-6">Categoria B</option>
-          <option value="Categoria C" data-card-id="categoria-4">Categoria C</option>
-          <option value="Categoria D" data-card-id="categoria-5">Categoria D</option>
-          <option value="Renovação / Reciclagem" data-card-id="categoria-3">Renovação / Reciclagem</option>
-        </select>
-      </div>
-      <div class="form-group text-center mt-5">
-        <button type="submit" class="btn btn-edit">Enviar</button>
-      </div>
-    </form>
+    </div>
   </div>
 </div>
 </div>
-</div>
-</div>
-</section>
-
-
-
-
-  <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const cards = document.querySelectorAll('.card');
-  const select = document.getElementById('categoria');
-  const formSection = document.getElementById('form'); // Get the form section
-
-  cards.forEach(card => {
-    card.addEventListener('click', function () {
-      const id = this.getAttribute('id');
-      const option = select.querySelector(`option[data-card-id="${id}"]`);
-
-      if (option) {
-        option.selected = true;
-        console.log(`Selected option with data-card-id "${id}"`);
-
-        // Add the selected-card class to the clicked card
-        cards.forEach(card => card.classList.remove('selected-card'));
-        this.classList.add('selected-card');
-
-        // Scroll to the form section smoothly
-        formSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-});
-
-</script>
-
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('form'); // Substitua 'orderForm2' pelo ID correto do seu formulário
+  document.addEventListener('DOMContentLoaded', function () {
+    const cards = document.querySelectorAll('.card');
+    const select = document.getElementById('categoria');
+    const formSection = document.getElementById('form');
 
-  form.addEventListener('submit', function (event) {
-    event.preventDefault();
+    cards.forEach(card => {
+      card.addEventListener('click', function () {
+        const id = this.getAttribute('id');
+        const option = select.querySelector(`option[data-card-id="${id}"]`);
 
-    // Recolha os valores dos campos do formulário
-    const nome = document.getElementById('nome').value;
-    const cidade = document.querySelector('#cidade').value;
-    const telefone = document.getElementById('telefone').value;
-    const datetime = document.getElementById('datetime').value;
-    const categoria = document.querySelector('#categoria').value;
+        if (option) {
+          option.selected = true;
+          console.log(`Selected option with data-card-id "${id}"`);
 
-    // Variável para armazenar o número de telefone do vendedor
-    let numeroVendedor;
+          cards.forEach(card => card.classList.remove('selected-card'));
+          this.classList.add('selected-card');
 
-    // Determine o número de telefone com base na cidade selecionada
-    switch (cidade) {
-      case 'Engenheiro Caldas':
-        numeroVendedor = '+5533997334970'; // Número para Engenheiro Caldas
-        break;
-      case 'Tarumirim':
-        numeroVendedor = '+5533999919237'; // Número para Tarumirim
-        break;
-      case 'Itanhomi':
-        numeroVendedor = '+5533999919237'; // Número para Itanhomi
-        break;
-      default:
-        // Use um número padrão ou lógica adicional, se necessário
-        numeroVendedor = '+5533997334970'; // Número padrão
-        break;
-    }
+          formSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  });
 
-    // Construa a mensagem para o WhatsApp
-    const mensagem = `📃 *ORÇAMENTO:*
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('form');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const nome = document.getElementById('nome').value;
+      const telefone = document.getElementById('telefone').value;
+      const datetime = document.getElementById('datetime').value;
+      const categoria = document.querySelector('#categoria').value;
+
+      let numeroVendedor = '+5533987231718';
+
+      const mensagem = `📃 *ORÇAMENTO:*
 👤 *Nome:* ${nome}
 ----------------------------------------
-🏙️ *Cidade:* ${cidade}
 📞 *Telefone:* ${telefone}
 📅 *Data e Hora que estou disponível:* ${datetime}
 🚗 *Habilitação Pretendida:* ${categoria}`;
 
-    // Crie a URL para abrir o WhatsApp com a mensagem preenchida
-    const whatsappURL = `https://api.whatsapp.com/send?phone=${numeroVendedor}&text=${encodeURIComponent(mensagem)}`;
+      const whatsappURL = `https://api.whatsapp.com/send?phone=${numeroVendedor}&text=${encodeURIComponent(mensagem)}`;
 
-    // Abra o WhatsApp em uma nova janela ou guia
-    window.open(whatsappURL, '_blank');
+      window.open(whatsappURL, '_blank');
+    });
   });
-});
 </script>
+
+
 
 
 
@@ -411,27 +385,9 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="tab-content">
     <div class="tab-pane active text-center" id="tab1">
   <h3>Endereço</h3>
-  <p>Avenida Padre João Pina do Amaral - 213- Vila Rainha. Engenheiro Caldas - Minas Gerais.</p>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d235.4930706670471!2d-42.04399566620433!3d-19.20004421677733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1698676487237!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+  <p>Avenida JK, nº42. Sobrália, MG, Brazil- Minas Gerais.</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30136.7898674133!2d-42.137101292610154!3d-19.234528327393708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb045b254efa465%3A0xdbf0c05d7d24d8ab!2sAUTO%20ESCOLA%20SOBR%C3%81LIA!5e0!3m2!1spt-BR!2sbr!4v1699446876807!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
-
-
-      <div class="tab-pane" id="tab2">
-        <h3>Endereço</h3>
-        <p>Professor Bernardino Senna, 125 - Centro - Tarumirim, MG</p>
-        <p>Telefone para Contato: <a href="https://api.whatsapp.com/send?phone=5533999919237" target="_blank">(33) 9 9991-9237 <i class="fab fa-whatsapp"></i></a></p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.7172930939855!2d-42.008676288834316!3d-19.27879815253724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb05c19cf8e3157%3A0xc7222ceff899d2c1!2sR.%20Prof.%20Bernardino%2C%20125%20-%20Tarumirim%2C%20MG%2C%2035140-000!5e0!3m2!1spt-BR!2sbr!4v1698687162301!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-
-      <div class="tab-pane" id="tab3">
-        <h3>Endereço:</h3>
-        <p>Av. JK, 132 - Centro - Itanhomi, MG</p>
-        <p>Telefone para Contato: <a href="https://api.whatsapp.com/send?phone=5533999919237" target="_blank">(33) 9 9991-9237 <i class="fab fa-whatsapp"></i></a></p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.5557221088825!2d-41.86600812588791!3d-19.17091521511853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb0f915bc0890dd%3A0x3b6d4e30886dfaa8!2sAv.%20Juscelino%20Kubitscheck%2C%20132%20-%20Itanhomi%2C%20MG%2C%2035120-000!5e0!3m2!1spt-BR!2sbr!4v1698687285063!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </div>
 </section>
 
 <hr>

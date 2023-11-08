@@ -96,6 +96,34 @@ header {
     text-align: center;
 }
 
+/* Hide the mobile logo on desktop */
+.mobile-logo {
+    display: none;
+  }
+  
+  /* Show the desktop logo on desktop */
+  @media (min-width: 768px) {
+    .img-logo {
+      display: block;
+    }
+    .mobile-logo {
+      display: none;
+    }
+  }
+  
+  /* Show the mobile logo on mobile */
+  @media (max-width: 767px) {
+    .img-logo {
+      display: none;
+    }
+    .mobile-logo {
+      display: block;
+      width: 60%;
+    }
+  }
+  
+  
+
 .card{
     border-radius: 10px;
     background-color: #0e0d0d;
@@ -409,3 +437,46 @@ ul.nav.nav-pills.nav-justified .nav-item .nav-link.active {
 .form-control select {
     border-radius: 10px;
 }
+
+
+  
+.confete {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    opacity: 0.8;
+    animation: confeteFall linear infinite;
+  }
+
+  @keyframes confeteFall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+    }
+  }
+
+  /* Adiciona novas classes para diferentes formas */
+  .circle {
+    background-color: #ff0026;
+    border-radius: 50%;
+    z-index: -1;
+
+  }
+
+  .square {
+    background-color: #ffbb00;
+    border-radius: 0; /* Quadrado */
+    z-index: -1;
+
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #750000; /* Triângulo para baixo */
+    z-index: -1;
+  }
